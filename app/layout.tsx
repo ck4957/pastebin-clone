@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistMono = Geist_Mono({
@@ -22,10 +23,10 @@ export default function RootLayout({
       <body className={`${geistMono.variable} font-mono antialiased min-h-full bg-gray-950 text-gray-100`}>
         <header className="border-b border-gray-800 bg-gray-900/80 backdrop-blur sticky top-0 z-10">
           <div className="max-w-4xl mx-auto px-4 py-3 flex items-center gap-3">
-            <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <span className="text-xl">📋</span>
               <span className="text-lg font-bold text-white tracking-tight">PasteBin</span>
-            </a>
+            </Link>
             <span className="text-gray-600 text-sm ml-auto">share code & text instantly</span>
           </div>
         </header>

@@ -22,7 +22,6 @@ export interface Paste {
 // Attach to `global` so Next.js HMR doesn't reset the Map between hot reloads.
 
 declare global {
-  // eslint-disable-next-line no-var
   var __pasteStore: Map<string, Paste> | undefined;
 }
 
