@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import type { Paste } from "@/lib/storage";
 
@@ -128,12 +129,12 @@ export default function PasteView({ paste }: Props) {
           >
             {copied ? "✓ Copied!" : "📋 Copy"}
           </button>
-          <a
+          <Link
             href="/"
             className="text-xs bg-blue-700 hover:bg-blue-600 text-white px-3 py-2 rounded-lg transition-colors"
           >
             + New
-          </a>
+          </Link>
         </div>
       </div>
 
